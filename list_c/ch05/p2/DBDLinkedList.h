@@ -19,15 +19,15 @@ typedef struct _dbDLinkedList
 	Node * tail;
 	Node * cur;
 	int numOfData;
-}DBDLinkedlist;
+}DBDLinkedList;
 
 typedef DBDLinkedList List;
 
-void ListInint(List * plist);
-void LInsert(List * plist, Data pdata);
+void ListInit(List * plist);
+void LInsert(List * plist, Data data);
 
 int LFirst(List * plist, Data * pdata);
-int LNest(List * plist, Data * pdata);
+int LNext(List * plist, Data * pdata);
 
 Data LRemove(List * plist);
 int LCount(List * plist);

@@ -24,7 +24,7 @@ Data SPop(Stack * pstack)
 {
 	int data;
 	
-	if(SIsempty(pstack)==-1)
+	if(SIsempty(pstack)==1)
 	{
 		printf("Stack Memory Error!");
 		exit(-1);
@@ -38,7 +38,7 @@ Data SPop(Stack * pstack)
 
 Data SPeek(Stack *pstack)
 {
-	if(SIsempty(pstack)==-1)
+	if(SIsempty(pstack)==1)
 	{
 		printf("Stack Memory Error!");
 		exit(-1);
